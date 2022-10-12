@@ -41,7 +41,7 @@ class PrototypesController < ApplicationController
   end
 
   def destroy
-    if @prototype.delete
+    if @prototype.destroy
       redirect_to root_path(@prototype)
     else
       render :new
